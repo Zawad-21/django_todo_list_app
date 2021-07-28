@@ -89,6 +89,9 @@ form button:hover {
   padding: 1rem;
   cursor: pointer;
 }
+.trash-button a{
+  color: inherit;
+}
 .todo-item {
   padding: 0rem 1rem;
 }

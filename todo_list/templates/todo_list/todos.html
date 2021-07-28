@@ -1,7 +1,7 @@
 {% for todo in todos %}
     <div class="todo">
         <li class="todo-item">{{ todo }}</li>
-        <button class="complete-button"><i class="fas fa-check"></i></button>
-        <button class="trash-button"><i class="fas fa-trash"><a href="{% url 'delete_todo' %}"></a></i></button>
+        <a class="complete-button" href="main.html"><i class="fas fa-check"></i></a>
+        <a class="trash-button" href="main.html"><i class="fas fa-trash"></i></a>
     </div>
 {% endfor %}
