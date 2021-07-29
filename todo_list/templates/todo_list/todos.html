@@ -1,7 +1,6 @@
 {% for todo in todos %}
     <div class="todo">
         <li class="todo-item">{{ todo }}</li>
-        <a class="complete-button" href="main.html"><i class="fas fa-check"></i></a>
-        <a class="trash-button" href="main.html"><i class="fas fa-trash"></i></a>
+        <a class="trash-button" href="{% url 'delete_todo' todo.id %}"><i class="fas fa-trash"></i></a>
     </div>
 {% endfor %}

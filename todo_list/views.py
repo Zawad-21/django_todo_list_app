@@ -58,3 +58,12 @@ def login_page(request):
 def logout_user(request):
     logout(request)
     return redirect('login')
+
+
+def  delete_todo(request, pk):
+    todo = Todo.objects.get(id=pk)
+    if request.method == 'POST':
+        todo.delete()
+        return redirect('home')
+
+    return render(request, 'todo_list/delete_todo.html')
